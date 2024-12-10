@@ -119,7 +119,7 @@ namespace ElasticAPI.Controllers
 
                 if (examinationIds.Length == 0)
                 {
-                     patients = await _orchestrateIndexes.GetPatients();
+                     throw new Exception("Aranan kriterlere sahip bir hasta bulunamadı !");
                 }
                 else
                 {

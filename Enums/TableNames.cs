@@ -4,6 +4,11 @@
     {
         Patients,
         Examinations,
-        Biopcy
+        Biopcy,
+        CoinfectionInformatio,
+        HepatitBSerology,
+        NonInvasiveTests,
+        VaccineHistory,
+        SourceInformation
     }
 }

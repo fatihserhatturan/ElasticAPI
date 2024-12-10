@@ -32,13 +32,13 @@ namespace ElasticAPI.Services.LogicService
                         case "hepatitbserology":
                             filterDto.HepatitBSerology.Values = item.Value;
                             break;
-                        case "noninvasivetests":
+                        case "invasivetests":
                             filterDto.NonInvasiveTests.Values = item.Value;
                             break;
                         case "laboratoryfindings":
                             filterDto.LaboratoryFindings.Values = item.Value;
                             break;
-                        case "vaccinehistory":
+                        case "vaccinationinfo":
                             filterDto.VaccineHistory.Values = item.Value;
                             break;
                         case "coinfectioninformation":

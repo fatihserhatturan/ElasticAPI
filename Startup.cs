@@ -15,6 +15,11 @@ using ElasticAPI.Services.ElasticService.Indexes;
 using ElasticAPI.Services.LogicService;
 using ElasticAPI.Services.ElasticService.Filter;
 using ElasticAPI.Services.ElasticService.Filter.Biopcy;
+using ElasticAPI.Services.ElasticService.Filter.HepatitBSerology;
+using ElasticAPI.Services.ElasticService.Filter.CoinfectionInformation;
+using ElasticAPI.Services.ElasticService.Filter.NonInvasiveTests;
+using ElasticAPI.Services.ElasticService.Filter.VaccineHistory;
+using ElasticAPI.Services.ElasticService.Filter.SourceInformation;
 
 namespace ElasticAPI
 {
@@ -51,6 +56,11 @@ namespace ElasticAPI
             // OrchestrateIndexes servisini kaydet
             services.AddScoped<OrchestrateIndexes>();
             services.AddScoped<IBiopcyFilter, BiopcyFilter>();
+            services.AddScoped<IHepatitBSerologyFilter, HepatitBSerologyFilter>();
+            services.AddScoped<ICoinfectionInformationFilter, CoinfectionInformationFilter>();
+            services.AddScoped<INonInvasiveTestsFilter, NonInvasiveTestsFilter>();
+            services.AddScoped<IVaccineHistoryFilter, VaccineHistoryFilter>();
+            services.AddScoped<ISourceInformationFilter, SourceInformationFilter>();
             services.AddScoped<IOrchestrateFilter, OrchestrateFilter>();
             services.AddScoped<IFilterLogic, FilterLogic>();
         }
